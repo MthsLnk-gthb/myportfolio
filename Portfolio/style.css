@@ -1,0 +1,189 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(7, 17, 39), rgb(15, 35, 61));
+    background-attachment: fixed;
+}
+
+header{
+    float: right;
+    margin-right: 0%;
+    margin-top: -1vw;
+}
+
+header>ul>li{
+    display: inline-block ;
+    padding-right: 4vw;
+}
+
+#topics>li>a{
+    color: rgba(241, 241, 241, 0.829);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    transition: 0.3s color linear;
+    border: none;
+    padding: 3px;
+}
+
+#topics>li>a:hover {
+  color: rgb(10, 202, 202);
+  }
+
+  section{
+    margin-left: 15vw;
+  }
+
+  #firstblock{
+    padding-top: 10vw;
+    text-align: justify;
+    position: relative;
+    display: grid;
+  }
+
+  @font-face {
+    font-family: retroica;
+    src: url(fonts/Retroica.ttf);
+  }
+
+#firstblock>h1{
+    font-family: retroica, sans-serif;
+    font-weight: normal;
+    color: rgb(193, 214, 0);
+    font-size: 2.5em;
+  }
+
+  p{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+#firstblock>p{
+    word-spacing: -1px;
+    margin-top: -3vw;
+  }
+
+  #secondblock{
+    text-align: justify;
+    position: relative;
+    display: grid;
+    padding-top: 2%;
+  }
+
+  #secondblock>h2{
+    color: rgb(193, 214, 0);
+    font-family: retroica, sans-serif;
+    font-size: 1.5em;
+
+  }
+
+  #secondblock>p{
+    margin-top: -1%;
+    color: aliceblue;
+    word-spacing: -2px;
+
+  }
+
+#myself{
+    float: right;
+    position: relative;
+
+    margin: -20.5vw 10vw auto auto;
+
+    width: 20vw;
+    height: 20vw;
+
+    border: 3px solid  rgba(5, 9, 17, 0.562);
+    border-radius: 100%;
+
+    filter: brightness(90%) saturate(110%);
+}
+
+#myself:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 204, 255, 0)) padding-box,
+  linear-gradient(to right, rgb(196, 0, 75), rgb(255, 0, 0) 80%) border-box;
+}
+
+button{
+
+  height: 3.5vw;
+  width: 9vw;
+
+  text-align: center;
+  justify-content: center;
+
+  font-family: Retroica, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+
+  background-color: rgb(193, 214, 0);
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: black;
+  color: rgb(193, 214, 0);
+
+  cursor: pointer ;
+  border-color: rgb(193, 214, 0);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+  header{
+  display: inline;
+  justify-content: center;
+  text-align: center;
+
+  padding-right: 15%;
+  padding-left: 4%;
+
+  margin-bottom: -15vw;
+  }
+
+  header>ul>li{
+    padding: 5px;
+}
+
+article{
+  justify-content: center;
+  text-align: center;
+}
+
+#firstblock, #secondblock{
+  margin: auto 10%;
+}
+
+#secondblock>h2{
+  word-spacing: -0.5vw;
+}
+  
+  #myself{
+    
+    margin: auto 20%;
+
+    float: none;
+    position: static;
+    
+
+    width: 35vw;
+    height: 35vw;
+  }
+
+  button{
+    height: 10vw;
+    width: 18vw;
+
+    margin: auto 25vw;
+  }
+
+}
+
+
+
+
